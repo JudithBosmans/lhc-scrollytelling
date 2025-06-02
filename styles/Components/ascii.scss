@@ -1,0 +1,25 @@
+.asciiCont {
+  white-space: pre;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.1;
+
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 100vw;
+
+  height: auto;
+  overflow: auto;
+
+  margin: 0 auto;
+  display: block;
+
+  display: flex;
+  justify-content: center;
+}
+
+.char {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}

@@ -1,0 +1,19 @@
+$fonts: $URL + "/fonts/";
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url($fonts + "HelveticaNeueBlack.otf") format("otf"),
+    url($fonts + "Proximus-HelveticaNeueBlack.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPMondwest";
+  font-display: swap;
+  src: url($fonts + "PPMondwest-Regular.otf") format("otf"),
+    url($fonts + "PPMondwest-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: italic;
+}

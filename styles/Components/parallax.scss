@@ -1,0 +1,227 @@
+.section {
+  height: 110vh;
+  position: relative;
+}
+
+/////////////
+// BIGBANG //
+/////////////
+
+.parallax1 {
+  position: relative;
+  width: 100vw;
+  height: 180vh;
+  overflow: hidden;
+
+  &Header1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    z-index: 100;
+    max-width: 50%;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%) !important;
+
+    color: #0dff00;
+  }
+
+  &Image1 {
+    img {
+      position: absolute;
+
+      top: 10%;
+      left: 0;
+
+      max-width: 100vw;
+      z-index: 0;
+    }
+  }
+}
+
+//////////////////
+// HIGGS FIELD ///
+/////////////////
+
+.parallax2 {
+  height: 200vh;
+  width: 100vw;
+
+  &Header2 {
+    display: flex;
+    flex-direction: column;
+
+    z-index: 100;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30vh;
+
+    color: black;
+  }
+
+  &Image2 {
+    img {
+      position: absolute;
+
+      top: 10%;
+      left: 0;
+
+      width: 100vw;
+      z-index: 0;
+    }
+  }
+}
+
+.stickyZoom {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+///////////////////////
+// WHY THIS MATTERS ///
+//////////////////////
+
+.parallax3 {
+  height: 250vh;
+  width: 100vw;
+
+  &Header3 {
+    display: flex;
+    flex-direction: column;
+
+    z-index: 100;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30vh;
+
+    color: black;
+  }
+
+  &Image3 {
+    img {
+      position: absolute;
+
+      top: -5vh;
+      right: -40vw;
+
+      height: 110vh;
+      z-index: 0;
+    }
+  }
+}
+
+///////////////////////
+// SEARCH ///
+//////////////////////
+
+.parallax4 {
+  height: 250vh;
+  width: 100vw;
+
+  &Header4 {
+    display: flex;
+    flex-direction: column;
+
+    z-index: 100;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30vh;
+
+    color: black;
+  }
+
+  &Image4 {
+    img {
+      position: absolute;
+
+      top: -5vh;
+      right: -40vw;
+
+      height: 110vh;
+      z-index: 0;
+    }
+  }
+}
+
+///////////////////////
+// SEARCH ///
+//////////////////////
+
+.parallax5 {
+  height: 250vh;
+  width: 100vw;
+  margin-top: 35vh;
+
+  &Header5 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 100;
+    max-width: 50%;
+    margin-top: 15vh;
+
+    color: black;
+  }
+
+  .text5 {
+    margin-bottom: 10vh;
+  }
+
+  &Imagecont {
+    width: 95vw;
+    margin: 0 auto;
+    height: 120vh;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    img {
+      width: 270px;
+      height: auto;
+      object-fit: cover;
+      opacity: 70%;
+      z-index: 150;
+
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+}
+
+.image1 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.image2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.image3 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+.image4 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.image5 {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.image6 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.image7 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.image8 {
+  grid-area: 4 / 5 / 5 / 6;
+}
