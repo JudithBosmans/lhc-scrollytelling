@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 
 export default function BigBang() {
   const targetRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start end", "end start"],

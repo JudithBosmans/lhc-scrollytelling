@@ -9,15 +9,30 @@ export default function Search() {
     offset: ["start end", "end start"],
   });
 
-  const zoomMove = useTransform(
-    scrollYProgress,
-    [0.35, 0.6],
-    ["0px", "-115vw"]
-  );
-
   const slowY = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
   const mediumY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
   const fastY = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+
+  const zoomMove1 = useTransform(
+    scrollYProgress,
+    [0.1, 0.35],
+    ["-120vw", "10vw"]
+  );
+  const zoomMove2 = useTransform(
+    scrollYProgress,
+    [0.15, 0.4],
+    ["-130vw", "0vw"]
+  );
+  const zoomMove3 = useTransform(
+    scrollYProgress,
+    [0.2, 0.45],
+    ["-140vw", "-30vw"]
+  );
+  const zoomMove4 = useTransform(
+    scrollYProgress,
+    [0.25, 0.5],
+    ["-150vw", "-40vw"]
+  );
 
   return (
     <div className="section parallax4" ref={targetRef}>
@@ -39,12 +54,35 @@ export default function Search() {
             </motion.p>
           </div>
         </motion.div>
-        <div className="parallax4Image4">
-          <motion.img
-            style={{ x: zoomMove }}
-            src="/images/4_SEARCH.png"
-            alt="Higgs Field Image"
-          />
+        <div className="imageCont4">
+          <div className="parallax4Image4">
+            <motion.img
+              style={{ x: zoomMove1 }}
+              src="/images/4_SEARCH/1.png"
+              alt="Higgs Field Image"
+            />
+          </div>
+          <div className="parallax4Image41">
+            <motion.img
+              style={{ x: zoomMove2 }}
+              src="/images/4_SEARCH/2.png"
+              alt="Higgs Field Image"
+            />
+          </div>
+          <div className="parallax4Image42">
+            <motion.img
+              style={{ x: zoomMove3 }}
+              src="/images/4_SEARCH/3.png"
+              alt="Higgs Field Image"
+            />
+          </div>
+          <div className="parallax4Image43">
+            <motion.img
+              style={{ x: zoomMove4 }}
+              src="/images/4_SEARCH/4.png"
+              alt="Higgs Field Image"
+            />
+          </div>
         </div>
       </div>
     </div>

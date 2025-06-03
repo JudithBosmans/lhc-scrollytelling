@@ -4,3 +4,60 @@ body {
   margin: 0 auto;
   padding: 0 auto;
 }
+
+.button {
+  background-color: transparent;
+  border: 2px solid #0dff00;
+  border-radius: 10px;
+  color: #0dff00;
+
+  width: 250px;
+  height: 70px;
+}
+
+.scrollText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+
+  height: 100vh;
+  z-index: 100;
+
+  font-size: 15px;
+
+  padding: 0;
+  margin: 0;
+
+  .scrollItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .scrollNumber {
+    font-weight: 400;
+  }
+
+  .scrollLabel {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .scrollItem:hover .scrollLabel {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.scrollItem {
+  cursor: pointer;
+}

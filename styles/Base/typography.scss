@@ -36,13 +36,20 @@ h2 {
   font-style: italic;
 }
 
+.textSmall {
+  font-size: 27px;
+}
+
 .parallax1Subtitle1,
 .parallax2Subtitle2,
 .parallax3Subtitle3,
 .parallax4Subtitle4,
 .parallax5Subtitle5,
 .parallax6Subtitle6,
-.parallax7Subtitle7 {
+.parallax7Subtitle7,
+.button,
+.scrollText,
+.label {
   font-family: "Chivo Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
