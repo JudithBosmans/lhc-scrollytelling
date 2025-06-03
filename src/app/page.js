@@ -8,7 +8,6 @@ import WhyMatters from "../../pages/WhyMatters";
 import Search from "../../pages/Search";
 import Discovery from "../../pages/Discovery";
 import LHC from "../../pages/lhc";
-import End from "../../pages/lhc";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
